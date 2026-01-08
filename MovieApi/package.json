@@ -1,0 +1,24 @@
+{
+  "name": "movieapi",
+  "version": "1.0.0",
+  "description": "Our very first api using mongoose",
+  "keywords": [
+    "express",
+    "mongoose",
+    "typescript"
+  ],
+  "license": "ISC",
+  "author": "Sebastian Tegel",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.96",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "mongoose": "^9.1.2"
+  }
+}
