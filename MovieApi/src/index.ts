@@ -1,7 +1,8 @@
 import { configDotenv } from "dotenv";
 import mongoose from "mongoose";
-import express, { type Request, type Response } from "express";
+import express, { json, type Request, type Response } from "express";
 import { moviesRouter } from "./routes/movies.js";
+import cors from "cors";
 
 configDotenv();
 
@@ -13,6 +14,10 @@ if (!mongoUri) {
 
 // Skapa api
 const app = express();
+
+app.use(cors());
+
+app.use(json());
 
 // Endpoint "/"
 app.get("/", (_: Request, res: Response) => {
