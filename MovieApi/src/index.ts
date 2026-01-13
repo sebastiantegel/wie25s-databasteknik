@@ -1,7 +1,6 @@
 import { configDotenv } from "dotenv";
 import mongoose from "mongoose";
 import express, { type Request, type Response } from "express";
-import { movieModel } from "./models/Movie.js";
 import { moviesRouter } from "./routes/movies.js";
 
 configDotenv();
